@@ -1,0 +1,247 @@
+:root {
+  --bg-color: #9c835f;
+  --back-button: #724c21;
+  --game-title: #f9b23d;
+  --player-name: #000000;
+  --versus: #bd0000;
+  --result-bg: #4c9654;
+  --picked: #c4c4c4;
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--player-name);
+}
+
+/* header */
+header {
+  display: flex;
+  align-content: center;
+}
+
+header > h1 {
+  margin-top: 0.1rem;
+  margin-left: 1rem;
+  font-size: 36px;
+  color: var(--game-title);
+}
+
+header > a {
+  text-decoration: none;
+  color: var(--back-button);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+header > img {
+  width: 72px;
+  height: 72px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.back-button {
+  margin-left: 1rem;
+  animation: 1s;
+}
+
+.back-button:hover {
+  transform: scale(1.3);
+  transition: ease-in;
+}
+
+/* header end */
+/* main */
+
+main {
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#versus {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 196px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--versus);
+  padding-top: 1em;
+}
+
+#versus img {
+  width: 77px;
+  height: 71px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#versus img:hover {
+  transform: rotate(90deg);
+  scale: 1.5;
+}
+
+#info {
+  margin: 0.8em 0 0 0;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+  margin-top: 3rem;
+}
+
+.player-option {
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.player-option:hover {
+  transform: rotate(20deg);
+  scale: 1.3;
+}
+
+button > img {
+  width: 128px;
+  height: 92px;
+}
+
+/* DOM */
+.picked {
+  background-color: var(--picked);
+  cursor: not-allowed;
+  border-radius: 30px;
+  padding: 1em;
+}
+
+.box {
+  background: var(--result-bg);
+  border-radius: 10px;
+  transform: rotate(-28.87deg);
+  animation: 1s ease-in-out;
+  width: 271.11px;
+  height: 166.93px;
+}
+
+.draw-box {
+  width: 271.11px;
+  height: 166.93px;
+  background: #035b0c;
+  border-radius: 10px;
+  transform: rotate(-28.87deg);
+}
+
+.info {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 2.2rem;
+}
+
+.no-cursor {
+  pointer-events: none;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #player-options,
+  #computer-options {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #versus {
+    padding: 1rem;
+  }
+
+  #versus > p {
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 14px;
+  }
+
+  header > img {
+    width: 50px;
+    height: 50px;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  header > a {
+    font-size: 48px;
+  }
+
+  .back-button {
+    margin: 0 0.5em;
+  }
+
+  button > img {
+    width: 75px;
+    height: 56.25px;
+  }
+
+  #info {
+    margin: 1rem 0 0 0;
+    font-size: 72px;
+  }
+}

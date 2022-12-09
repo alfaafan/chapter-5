@@ -1,0 +1,235 @@
+/* setting font */
+* {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+.headings {
+  font-family: "Bebas Neue", cursive;
+}
+
+html h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+html h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+html h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+html .subtext {
+  color: white;
+  font-size: 14px;
+}
+
+html .body {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+}
+
+html .main-button {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+html .navigation a {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+html .navigation:hover {
+  color: #fbb341 !important;
+}
+
+/* navbar */
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav .nav-icon {
+  margin-top: 10px;
+}
+
+.nav-link:hover {
+  color: #fbb341 !important;
+}
+
+/* main */
+#main {
+  background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090a 99.74%), url(../img/bg/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#main .main-title {
+  padding-top: 10%;
+  padding-bottom: 2rem;
+}
+
+#main .story-scroll-down {
+  margin-bottom: -25px !important;
+}
+.scroll-link-wrapper {
+  text-decoration: none;
+  color: white;
+}
+
+/* about */
+#about {
+  height: 100vh;
+  background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080a0b 99.74%), url(../img/bg/the-games-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+/* features */
+#features {
+  height: 100vh;
+  background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080a0b 99.74%), url(../img/bg/features.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#features .features-title {
+  margin-top: 25vh;
+}
+
+#features .features-content {
+  margin-top: 10vh;
+}
+
+/* System Req */
+#system-req {
+  background-image: radial-gradient(30% 75% at 65% 40%, rgba(0, 0, 52, 0) 0%, rgba(10, 10, 10, 0.5) 50%, #000 95%), url(../img/bg/requirements.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10%;
+  padding-top: 10vh;
+}
+
+#system-req .system-req-title {
+  margin: 1rem 0;
+}
+
+#system-req td {
+  padding: 0.5rem;
+}
+
+/* top scores */
+#top-scores {
+  background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080a0b 99.74%), url(../img/bg/top-score-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+#top-scores .top-scores-title {
+  padding-top: 45vh;
+}
+
+#top-scores .profilepic {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  margin: 15px 20px;
+}
+
+#top-scores .twitter {
+  width: 25px;
+}
+
+#top-scores .cards {
+  margin-bottom: 5vh;
+}
+
+#top-scores .card-date {
+  color: #a2a2a2;
+}
+
+/* Newsletter */
+#newsletter {
+  background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080a0b 99.74%), url(../img/bg/newsletter.png) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 10%;
+}
+
+#newsletter .main-button {
+  margin-top: 25px;
+  height: 45px;
+}
+
+::placeholder {
+  color: #ffb548 !important;
+  opacity: 1;
+}
+
+#newsletter figure img {
+  background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080a0b 99.74%) !important;
+}
+
+/* Footer */
+footer {
+  background-image: url(../img/bg/newsletter.png);
+}
+#footer .navbar-bottom {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-link p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .footer-link a:hover {
+  color: #fbb341;
+}
+/* Media Query */
+@media screen and (max-width: 767px) {
+  /* font */
+  html h1 {
+    font-size: 60px;
+  }
+
+  html h3 {
+    font-size: 16px;
+  }
+
+  /* top scores */
+  #top-scores .top-scores-title {
+    padding-top: 5vh;
+  }
+
+  #top-scores .top-scores-cards {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* top-scores */
+  #top-scores .profilepic {
+    margin: 15px 10px;
+  }
+}

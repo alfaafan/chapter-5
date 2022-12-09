@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a href="https://chelilac.github.io/binar-chapter-3/" class="back-button"><</a>
+      <img src="assets/logo 1.png" alt="Logo Game" class="logo" />
+      <h1 class="main-title">Rock Paper Scissors</h1>
+    </header>
+    <!-- header end -->
+    <!-- main content -->
+    <main>
+      <div class="container">
+        <!-- player -->
+        <div class="player">
+          <h3>Player 1</h3>
+          <div id="player-options" class="option">
+            <button class="batu" onclick="pickOption('batu')">
+              <img src="assets/batu.png" class="player-option" id="player-batu" alt="batu" />
+            </button>
+            <button class="kertas" onclick="pickOption('kertas')">
+              <img src="assets/kertas.png" class="player-option" id="player-kertas" alt="kertas" />
+            </button>
+            <button class="gunting" onclick="pickOption('gunting')">
+              <img src="assets/gunting.png" class="player-option" id="player-gunting" alt="gunting" />
+            </button>
+          </div>
+        </div>
+        <!-- vs -->
+        <div id="versus">
+          <div id="box">
+            <p id="info">VS</p>
+          </div>
+          <img src="assets/refresh.png" id="refresh" alt="refresh" />
+        </div>
+        <!-- compter -->
+        <div class="computer">
+          <h3>Computer</h3>
+          <div id="computer-options" class="option">
+            <button class="batu">
+              <img src="assets/batu.png" id="com-batu" alt="batu" />
+            </button>
+            <button class="kertas">
+              <img src="assets/kertas.png" id="com-kertas" alt="kertas" />
+            </button>
+            <button class="gunting">
+              <img src="assets/gunting.png" id="com-gunting" alt="gunting" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main content end -->
+    <script src="suit.js"></script>
+  </body>
+</html>
