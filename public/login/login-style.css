@@ -1,0 +1,89 @@
+/* general */
+:root {
+  --primary: #fbb341;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090a 99.74%), url(/home/img/bg/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  color: var(--primary) !important;
+  font-size: 64px !important;
+}
+
+#main {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+}
+
+/* navbar */
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav .nav-icon {
+  margin-top: 10px;
+}
+
+.nav-link:hover {
+  color: #fbb341 !important;
+}
+
+html .navigation a {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+/* left side */
+
+.login-left {
+  padding-top: 35vh;
+  padding-left: 10vw !important;
+}
+
+.form-control {
+  width: 35vw !important;
+}
+
+.redirector {
+  text-decoration: none;
+}
+
+.redirector:hover {
+  color: var(--primary) !important;
+}
+
+input[type="email"],
+input[type="password"] {
+  color: var(--primary) !important;
+}
+
+/* right side */
+
+.login-right {
+  padding-top: 45vh;
+}
+
+.greetings {
+  color: var(--primary) !important;
+}
+
+p {
+  font-size: 24px;
+}
