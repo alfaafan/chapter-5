@@ -1,7 +1,16 @@
 const express = require("express");
+const session = require("express-session");
 const app = express();
 const port = 3000;
 const morgan = require("morgan");
+
+app.use(
+  session({
+    secret: "my-secret",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
 app.set("view engine", "ejs");
 
@@ -11,14 +20,6 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use(morgan("dev"));
-
-app.get("/", (req, res) => {
-  res.render("index");
-});
-
-app.get("/game", (req, res) => {
-  res.render("game");
-});
 
 const authRouter = require("./routes/auth");
 app.use("/auth", authRouter);
@@ -36,7 +37,7 @@ app.use((err, req, res, next) => {
 
 // 404 handler
 app.use((req, res, next) => {
-  res.status(404).render("404");
+  res.status(404).render("404", { title: "404: Not Found" });
 });
 
 app.listen(port, () => {

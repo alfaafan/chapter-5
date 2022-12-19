@@ -1,7 +1,4 @@
 [
-  {
-    "id": 1,
-    "email": "player@binar.co.id",
-    "password": "admin123"
-  }
+  { "id": 1, "email": "player@binar.co.id", "password": "admin123" },
+  { "id": 2, "email": "player2@binar.co.id", "password": "admin1234" }
 ]

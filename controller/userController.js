@@ -1,7 +1,14 @@
 let users = require("../db/users.json");
+const fs = require("fs");
 
 exports.getAll = (req, res) => {
   res.json(users);
+};
+
+exports.loadUsers = () => {
+  const fileBuffer = fs.readFileSync("./db/users.json", "utf-8");
+  const users = JSON.parse(fileBuffer);
+  return users;
 };
 
 exports.create = (req, res) => {
@@ -14,6 +21,7 @@ exports.create = (req, res) => {
   };
 
   users.push(user);
+  fs.writeFileSync("./db/users.json", JSON.stringify(users));
 
   res.status(201).json(user);
 };
@@ -35,8 +43,8 @@ exports.update = (req, res) => {
 
   user = {
     ...user,
-    title: title === undefined ? user.title : title,
-    body: body === undefined ? user.body : body,
+    email: email === undefined ? user.email : email,
+    password: password === undefined ? user.password : password,
   };
 
   users = users.map((i) => {
@@ -55,4 +63,12 @@ exports.delete = (req, res) => {
   users = users.filter((i) => i.id !== parseInt(id));
 
   res.json(users);
+};
+
+exports.checkUser = (email, password) => {
+  if (email && password) {
+    this.loadUsers;
+    let user = users.find((i) => i.email === email);
+    console.log(user);
+  }
 };
