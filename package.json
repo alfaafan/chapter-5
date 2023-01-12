@@ -1,9 +1,9 @@
 {
-  "name": "chapter-5",
+  "name": "chapter-6",
   "version": "1.0.0",
-  "description": "chapter 5 challenge fullstack web development binar",
+  "description": "chapter 6 challenge fullstack web development binar",
   "main": "app.js",
-  "repository": "https://github.com/chelilac/traditional-game.git",
+  "repository": "https://github.com/chelilac/binar-chapter-6",
   "author": "Alfaafan Yusufa Achmad <yusufa0509@gmail.com>",
   "license": "MIT",
   "scripts": {
